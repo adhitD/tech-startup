@@ -4,7 +4,7 @@
       <!-- left content -->
       <div data-aos="fade-right" class="space-y-6">
         <h1 class="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">Membangun <span class="text-transparent bg-clip-text bg-linear-180 from-satu to-tiga">Solusi Digital</span> yang Mempesona</h1>
-        <p class="max-w-2xl text-lg text-slate-600 dark:text-zinc-300">Kami tim mahasiswa developer & designer yang membangun website, UI/UX, dan branding dengan standar internasional — cepat, elegan, dan efektif meningkatkan konversi.</p>
+        <p class="max-w-2xl text-lg text-slate-600 dark:text-zinc-300">Kami adalah startup digital yang berfokus pada pengembangan website, UI/UX, dan branding. AlgoTri menggabungkan logika, kreativitas, dan teknologi untuk menciptakan solusi digital yang efisien dan modern</p>
 
         <div class="flex flex-wrap gap-4">
           <a href="#portfolio" class="px-5 py-3 font-semibold rounded-full btn-outline">Lihat Portofolio</a>

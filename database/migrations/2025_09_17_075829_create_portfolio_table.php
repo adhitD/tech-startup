@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('kategori');
             $table->string('gambar');
+            $table->string('link');
             $table->timestamps();
       
            

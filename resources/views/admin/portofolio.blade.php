@@ -7,12 +7,12 @@
         <div class="flex gap-3">
           <button @click="showModalTambah = true" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-medium transition-colors">
             <i class="fa fa-plus"></i>
-            Tambah Project
+            Tambah Portofolio
           </button>
         </div>
       </div>
 
-      <!-- Services Table -->
+      <!-- Portfolio Table -->
       <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full">
@@ -21,6 +21,7 @@
                 <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Judul</th>
                 <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Kategori</th>
                 <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Gambar</th>
+                <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Link</th>
                 <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Aksi</th>
               </tr>
             </thead>
@@ -38,6 +39,10 @@
                                     </td>
                                     <td class="py-4 px-3">
                                       {{ $item['gambar'] }}
+
+                                    </td>
+                                    <td class="py-4 px-3">
+                                      {{ $item['link'] }}
 
                                     </td>
                                  
@@ -89,6 +94,11 @@
             <div>
               <label class="block text-sm font-medium mb-1">Gambar</label>
               <input id="gambar" name="gambar" type="file" class="w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1">Link</label>
+              <input id="link" name="link" type="text" class="w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200">
             </div>
            
             <!-- Footer -->

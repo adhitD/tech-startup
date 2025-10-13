@@ -1,5 +1,6 @@
 <header class="fixed z-100 p-2 transition-colors duration-300 w-full md:p-4 backdrop-blur">
   <nav class="w-full py-4 border-0 rounded-lg shadow-2xl dark:bg-linear-90 dark:from-empat dark:via-satu dark:to-dua ">
+    <!-- <span class="material-icons">back</span> -->
     <div x-data="{open: false}" class="flex items-center justify-between px-4 mx-auto max-w-7xl md:px-8">
       <!-- Logo -->
       <div class="flex items-center space-x-3">

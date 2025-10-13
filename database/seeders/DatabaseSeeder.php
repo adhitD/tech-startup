@@ -21,11 +21,9 @@ class DatabaseSeeder extends Seeder
        
         
         $this->call([
-            PortfolioSeeder::class,
-            ServiceSeeder::class,
-            MessageSeeder::class,
+           
             UserSeeder::class,
-           ProyekSeeder::class,
+           
 
         ]);
     }

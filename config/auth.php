@@ -18,6 +18,11 @@ return [
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
     ],
 
+
+    //lama waktu sesi
+    'lifetime' => 60,      // dalam menit (60 menit = 1 jam)
+'expire_on_close' => false,
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards

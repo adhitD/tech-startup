@@ -66,7 +66,7 @@
 
       <hr class="my-4 border-gray-200">
 
-      <a href="{{ route('layananadmin') }}" id="logoutBtn" class="flex items-center px-3 py-2 rounded-md text-red-600 hover:bg-red-50">
+      <a href="{{ route('logout') }}" id="logoutBtn" class="flex items-center px-3 py-2 rounded-md text-red-600 hover:bg-red-50">
         <i class="fa fa-sign-out mr-2" aria-hidden="true"></i>
         Logout
       </a>

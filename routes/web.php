@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -18,13 +19,17 @@ Route::controller(UserController::class)->group(function(){
     
 });
 
+Route::get('/login',[LoginController::class,'showLoginForm'])->name('login');
+Route::post('/login',[LoginController::class,'login'])->name('login.post');
+Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 //admin
-Route::prefix('admin')->group(function () {
-Route::get('/', [AdminController::class, 'index'])->name('overviewadmin');
-Route::get('/pesan', [AdminController::class, 'pesan'])->name('pesanadmin');
-Route::get('/admin/pengguna', [AdminController::class, 'pengguna'])->name('penggunaadmin');
-Route::get('/pengaturan', [AdminController::class, 'pengaturan'])->name('pengaturanadmin');
-Route::get('/profil', [AdminController::class, 'profil'])->name('profiladmin');
+Route::middleware('auth')->prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('overviewadmin');
+    Route::get('/pesan', [AdminController::class, 'pesan'])->name('pesanadmin');
+    Route::get('/admin/pengguna', [AdminController::class, 'pengguna'])->name('penggunaadmin');
+    Route::get('/pengaturan', [AdminController::class, 'pengaturan'])->name('pengaturanadmin');
+    Route::get('/profil', [AdminController::class, 'profil'])->name('profiladmin');
+    
 
 
 // layanan
