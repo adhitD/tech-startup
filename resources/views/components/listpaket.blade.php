@@ -110,6 +110,7 @@
     </div>
   </section>
 
+
   <!-- Paket UI/UX Design -->
   <section class="py-20 bg-slate-50">
     <div class="container mx-auto px-6 lg:px-12">
@@ -503,21 +504,18 @@
     </div>
   </section>
 
-
-<!-- Customisasi -->
-<section class="py-20 bg-gradient-to-r from-purple-900 to-indigo-800 text-white">
-  <div class="container mx-auto px-6 lg:px-12 text-center" data-aos="zoom-in">
-    <h2 class="text-3xl font-bold mb-6">Paket Customisasi & Konsultasi</h2>
-    <p class="mb-6 max-w-2xl mx-auto">Jika paket standar tidak sesuai kebutuhan, kami siap berdiskusi untuk solusi custom yang fleksibel.</p>
-    
-    <form action="{{ route('paket.store') }}" method="POST" class="inline-block">
-      @csrf
-      <input type="hidden" name="nama" value="haii...">
-      <input type="hidden" name="jenis" value="paket customisasi & Konsultasi">
-      <input type="hidden" name="harga" value="0">
-      <button class="bg-yellow-400 text-indigo-900 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-300 transition">
-        Hubungi Kami
-      </button>
-    </form>
-  </div>
-</section>
+  <!-- Customisasi -->
+  <section class="py-20 bg-gradient-to-r from-purple-900 to-indigo-800 text-white">
+    <div class="container mx-auto px-6 lg:px-12 text-center" data-aos="zoom-in">
+      <h2 class="text-3xl font-bold mb-6">Paket Customisasi & Konsultasi</h2>
+      <p class="mb-6 max-w-2xl mx-auto">Jika paket standar tidak sesuai kebutuhan, kami siap berdiskusi untuk solusi custom yang fleksibel.</p>
+         <form action="{{ route('paket.store') }}" method="POST">
+            @csrf
+            <input type="hidden" name="nama" value="haii...">
+            <input type="hidden" name="jenis" value="paket customisasi & Konsultasi">
+            <input type="hidden" name="harga" value="0">
+            <button class="inline-block bg-yellow-400 text-indigo-900 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-300 transition">
+         Hubungi Kami
+        </button>
+          </div>
+  </section>
