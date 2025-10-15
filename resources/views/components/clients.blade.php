@@ -1,5 +1,5 @@
 <section id="clients" class="py-20 ">
-  <div class="container px-6 mx-auto lg:px-12">
+  <div class="container px-6 mx-auto align-items-center">
     <h3 class="mb-10 text-3xl font-bold text-center" data-aos="fade-up">Klien & Testimonial</h3>
 
     <div class="swiper mySwiper" data-aos="fade-up">
@@ -19,8 +19,7 @@
           </div>
         </div>
         @empty
-        @endforelse
-
+        
         <!-- slide 2 -->
         <!-- <div class="p-6 swiper-slide">
           <div class="p-6 bg-white shadow rounded-2xl">
@@ -34,16 +33,17 @@
             <p class="text-slate-600">"Desain UI/UXnya intuitive dan elegan. Proses cepat dan rapi."</p>
           </div>
         </div> -->
-
+        
         <!-- slide 3 -->
-        <div class="p-6 swiper-slide">
+        <div class="p-6 swiper-slide ">
           <div class="p-6 bg-white shadow rounded-2xl">
-           <p class="text-black text-center">
-            belum ada 
-           </p> 
-        </div>
+            <p class="text-black text-center">
+              belum ada 
+            </p> 
+          </div>
         </div>
       </div>
+      @endforelse
 
       <!-- pagination -->
       <div class="mt-6 swiper-pagination"></div>
